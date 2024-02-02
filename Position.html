@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Positions in CSS</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: sans-serif;
+        background-color: hwb(0 34% 60%);
+        font-weight: bolder;
+        color: #ffffff;
+        width: 100vw;
+        /* overflow: none; */
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        flex-direction: column;
+      }
+      div {
+        height: 100px;
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        background-color: #000000;
+      }
+      #container {
+        width: 90vw;
+        height: 90vh;
+        position: relative;
+      }
+      #box1 {
+        background-color: #1d80d1;
+      }
+      #box2 {
+        background-color: #df16df;
+      }
+      #box3 {
+        background-color: #aca699;
+      }
+      #box4 {
+        background-color: #20da2c85;
+      }
+      .static{
+        position: static;
+      }
+      .relative{
+        position: relative;
+        top: 200px;
+        left:200px
+      }
+      .absolute{
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+      }
+      .fixed{
+        position: fixed;
+        top: 0px;
+        left: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div onclick="static()" id="box1">Static</div>
+      <div onclick="relative()" id="box2">Relative</div>
+      <div onclick="absolute()" id="box3">Absolute</div>
+      <div onclick="fixed()" id="box4">Fixed</div>
+    </div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, explicabo.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, explicabo.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, explicabo.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, explicabo.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, explicabo.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, explicabo.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, explicabo.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, explicabo.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, explicabo.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, explicabo.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, explicabo.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, explicabo.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, explicabo.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, explicabo.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, explicabo.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, explicabo.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, explicabo.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, explicabo.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, explicabo.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, explicabo.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, explicabo.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, explicabo.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, explicabo.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, explicabo.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, explicabo.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, explicabo.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, explicabo.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, explicabo.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, explicabo.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, explicabo.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, explicabo.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, explicabo.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, explicabo.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, explicabo.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, explicabo.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, explicabo.</p>
+   
+
+    <script>
+        function static(){
+            let element = document.getElementById("box1");
+            element.classList.add("static")
+        }
+        function relative(){
+            let element = document.getElementById("box2");
+            element.classList.add("relative")
+        }
+        function absolute(){
+            let element = document.getElementById("box3");
+            element.classList.add("absolute")
+        }
+        function fixed(){
+            let element = document.getElementById("box4");
+            element.classList.add("fixed")
+        }
+    </script>
+  </body>
+</html>
