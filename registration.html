@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration form</title>
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <form action="#">
+      <label for="fname">First Name: </label>
+      <input
+        type="text"
+        name="fname"
+        id="fname"
+        placeholder="Enter your first name"
+      />
+      <br />
+      <br />
+      <label for="lname">Last Name: </label>
+      <input
+        type="text"
+        name="lname"
+        id="lname"
+        placeholder="Enter your last name"
+      />
+      <br />
+      <br />
+      <label for="email">Email: </label>
+      <input
+       
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Enter your email id"
+      />
+      <br />
+      <br />
+      <label for="pswd">Password: </label>
+      <input
+        type="password"
+        name="pswd"
+        id="pswd"
+        placeholder="Enter your password"
+      />
+      <br />
+      <br />
+      <label for="psw-repeat">Repeat Password</label>
+      <input
+        type="password"
+        placeholder="Repeat password"
+        name="psw-repeat"
+        id="psw-repeat"
+        required
+      />
+      <br />
+      <br />
+      <label for="stb">Textbox: </label>
+      <input
+      maxlength="15"
+        type="text"
+        placeholder="sample"
+        name="stb"
+        id="stb" 
+      />
+      <br />
+      <br />
+      <input type="checkbox" id="parking" name="parking" value="parking" />
+      <label for="parking"> Do you want parking access</label><br />
+      <input type="checkbox" id="lib" name="lib" value="lib" />
+      <label for="lib"> Do you want library access</label><br />
+      <br />
+      <input type="radio" id="btech" name="course" value="btech" />
+      <label for="btech">BTech</label><br />
+      <input type="radio" id="mtech" name="course" value="mtech" />
+      <label for="mtech">Mtech</label><br />
+      <input
+        type="radio"
+        id="Bca"
+        name="course"
+        value="Bcs"
+      />
+      <label for="Bca">Bca</label>
+      <br>
+      <br>
+      <button type="reset">Reset</button>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

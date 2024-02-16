@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioned Img</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            background-color: steelblue;
+        }
+        #container{
+            position: relative;
+        }
+        #i1{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        #i2{
+            position: absolute;
+            top: 100px;
+            left: 300px;
+        }
+        #i3{
+            position: absolute;
+            top: 300px;
+            right: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+
+        <img id="i1" width="200" src="https://images.unsplash.com/photo-1707523547612-71891c225644?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyNHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        <img id="i2" width="200" src="https://images.unsplash.com/photo-1707870678076-40ba56a65ece?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzN3x8fGVufDB8fHx8fA%3D%3D" alt="">
+        <img id="i3" width="200" src="https://images.unsplash.com/photo-1707962797688-fcefda2811b1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2M3x8fGVufDB8fHx8fA%3D%3D" alt="">
+    </div>
+</body>
+</html>
